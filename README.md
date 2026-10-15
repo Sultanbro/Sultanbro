@@ -12,6 +12,8 @@
 | --- | --- | --- |
 | [Post & Booking API](https://github.com/Sultanbro/post) | PHP/Laravel, PostgreSQL, Keycloak, права и конфликты бронирований | Docker-демо, тесты, GitHub Actions |
 | [Microservices Gateway](https://github.com/Sultanbro/microservices-gateway) | Маршрутизация HTTP, интеграции и обработка ошибок | 14 тестов маршрутов и доступа; ответы внешних сервисов подменены |
+| [Tenant Access Gateway](https://github.com/Sultanbro/tenant-access-gateway) | Go/Casbin, компании и оргструктура, наследование ролей, CRUD-права, JWT и смена политик | Docker с двумя сервисами; 18 HTTP-сценариев, тесты изоляции и конкурентной смены прав |
+| [Sales Analytics Pipeline](https://github.com/Sultanbro/sales-analytics-pipeline) | Python/pandas, качество данных, аналитика продаж, фоновая очередь и восстановление задач | Docker с отдельными worker; тесты повторов, отмены и изоляции компаний |
 | [Jobtron](https://github.com/Sultanbro/test_surv) | Laravel/Vue, multitenancy, HR, KPI и отчётность. Участие как backend-разработчик | Карта модулей, точки входа в код, отдельные проверки сводки рабочего графика |
 | [Telegram WebApp](https://github.com/Sultanbro/Sultanbro.github.io) | Python/aiogram, асинхронные обработчики, SQLite-заказы и JavaScript | [Каталог в браузере](https://sultanbro.github.io/), 16 Python- и 4 JavaScript-теста |
 | [Payment Reconciliation](https://github.com/Sultanbro/payment-reconciliation) | Python/FastAPI, сверка платежей, Decimal, CSV, идемпотентные отчёты | Docker-демо, Swagger, тесты сверки и конкурентных запросов |
@@ -24,8 +26,8 @@
 - **Backend:** PHP, Laravel, REST API, SQL, MySQL, PostgreSQL.
 - **Full-stack:** Vue, JavaScript, HTML, CSS.
 - **Интеграции и инструменты:** Keycloak, Telegram Bot API, Docker, Git, PHPUnit, GitHub Actions.
-- **Python:** FastAPI, aiogram, SQLite, pytest; проекты сверки платежей и Telegram WebApp.
-- **Go:** изучаю язык на практике; реализован сервис резервирования товаров с транзакциями и конкурентными тестами.
+- **Python:** FastAPI, pandas, aiogram, SQLite, pytest; аналитика данных, фоновые задачи, сверка платежей и Telegram WebApp.
+- **Go:** изучаю язык на практике; проекты резервирования товаров и gateway с Casbin, иерархией ролей и изоляцией компаний.
 
 В README проектов описаны архитектура, запуск, проверенные сценарии и внешние зависимости. Для знакомства с работающим backend лучше начать с `post`; для быстрого просмотра интерфейса — с Telegram WebApp.
 
